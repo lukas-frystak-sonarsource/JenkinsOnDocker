@@ -1,0 +1,14 @@
+version: "3"
+name: "jenkins"
+
+services:
+  jenkins:
+    image: jenkins/jenkins:2.414.3-jdk17
+    environment:
+      - DOCKER_CERT_PATH=/certs/client
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - ./data/jenkins/home:/var/jenkins_home
+      - ./config/jenkins_certs:/certs/client
