@@ -3,3 +3,4 @@
 *.crt
 readme.md
 scp.md
+*.log
