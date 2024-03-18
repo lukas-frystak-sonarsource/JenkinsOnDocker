@@ -11,4 +11,4 @@ services:
       - "50000:50000"
     volumes:
       - ./data/jenkins/home:/var/jenkins_home
-      - ./config/jenkins_certs:/certs/client
+      - ./config/jenkins_java_cacert/cacerts:/opt/java/openjdk/lib/security/cacerts
