@@ -6,6 +6,7 @@ services:
     image: jenkins/jenkins:2.414.3-jdk17
     environment:
       - DOCKER_CERT_PATH=/certs/client
+      - JAVA_OPTS="-Dhudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL=disabled"
     ports:
       - "8080:8080"
       - "50000:50000"
