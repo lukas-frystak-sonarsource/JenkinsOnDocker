@@ -3,7 +3,7 @@ name: "jenkins"
 
 services:
   jenkins:
-    image: jenkins/jenkins:2.414.3-jdk17
+    image: jenkins/jenkins:2.462.3-jdk17
     environment:
       - DOCKER_CERT_PATH=/certs/client
       - JAVA_OPTS="-Dhudson.plugins.git.GitStatus.NOTIFY_COMMIT_ACCESS_CONTROL=disabled"
